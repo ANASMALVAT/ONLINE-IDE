@@ -9,9 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { defineTheme } from "../lib/defineTheme";
 import useKeyPress from "../hooks/useKeyPress";
-import Footer from "./Footer";
 import OutputWindow from "./OutputWindow";
-import CustomInput from "./CustomInput";
 import OutputDetails from "./OutputDetails";
 import ThemeDropdown from "./ThemeDropdown";
 import LanguagesDropdown from "./LanguagesDropdown";
@@ -82,7 +80,7 @@ const Landing = () => {
   };
 
   const handleCompile = () => {
-    
+
     setProcessing(true);
     const formData = {
       language_id: language.id,
