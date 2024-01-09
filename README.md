@@ -1,31 +1,33 @@
-# Create React App
+# CodeRush - Compile and Execute code in 40+ languages
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+⚡️ A code editor that compiles and runs your code on the web.
+Blog: <a href="https://www.freecodecamp.org/news/how-to-build-react-based-code-editor/" target="__blank">FreeCodeCamp - Build A Code IDE with React</a>
 
-## Deploy Your Own
+<img src="https://github.com/manuarora700/react-code-editor/blob/main/demo.png" />
 
-Deploy your own Create React App project with Vercel.
+## Features: 
+- Compile and execute code in 40+ programming languages.
+- Switch themes from a list of available themes.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
+## Installations and setup
 
-_Live Example: https://create-react-template.vercel.app/_
+- git clone `https://github.com/manuarora700/react-code-editor.git`
+- `npm install`
+- A sample `.env.sample` file is given, Register on <a href="https://rapidapi.com/judge0-official/api/judge0-ce/pricing" target="__blank">RapidAPI</a> and get your API keys.
+- Create a `.env` file.
+- Add the API Keys in the `.env` file
+- `npm start` to run the project.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+TODO:
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Add more languages [DONE]
+2. User login, authentication and registration (Firebase Auth)
+3. User Profile Page
+4. Save code functionality (Firestore - use Slug based approach)
+5. Share code functionality
 
-The page will reload when you make changes. You may also see any lint errors in the console.
+## Support
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+<a href="https://www.buymeacoffee.com/manuarora" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>

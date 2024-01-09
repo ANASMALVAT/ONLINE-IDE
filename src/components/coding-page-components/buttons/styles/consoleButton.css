@@ -1,0 +1,12 @@
+.console-dropdown{
+  display: none;
+}
+
+@media (max-width:600px){
+  .console-buttons{
+    display: none;
+  }
+  .console-dropdown{
+    display: flex;
+  }
+}
