@@ -212,7 +212,7 @@ const Landing = () => {
         pauseOnHover
       />
 
-      <div className="flex flex-row">
+      <div className="flex flex-col sm:flex-row">
         <div className="px-4 py-2">
           <LanguagesDropdown onSelectChange={onSelectChange} />
         </div>
