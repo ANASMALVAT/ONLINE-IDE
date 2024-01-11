@@ -78,24 +78,23 @@ const Landing = () => {
       }
     }
   };
-
   const handleCompile = () => {
-
     setProcessing(true);
     const formData = {
       language_id: language.id,
+      // encode source code in base64
       source_code: btoa(code),
       stdin: btoa(customInput),
     };
-
     const options = {
       method: "POST",
       url: process.env.REACT_APP_RAPID_API_URL,
-      params: { base64_encoded: true, fields: '*' },
+      params: { base64_encoded: "true", fields: "*" },
       headers: {
-        'Content-Type': 'application/json',
-        'X-Auth-User': "a1133bc6-a0f6-46bf-a2d8-6157418c6fe2",
-        Accept: 'application/json'
+        "content-type": "application/json",
+        "Content-Type": "application/json",
+        "X-RapidAPI-Host": process.env.REACT_APP_RAPID_API_HOST,
+        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
       },
       data: formData,
     };
@@ -234,7 +233,6 @@ const Landing = () => {
         <div className="right-container flex flex-shrink-0 w-[30%] flex-col">
           <OutputWindow outputDetails={outputDetails} />
           <div className="flex flex-col items-end">
-
             <button
               onClick={handleCompile}
               disabled={!code}
